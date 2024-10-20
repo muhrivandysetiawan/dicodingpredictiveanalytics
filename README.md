@@ -1,8 +1,6 @@
 # Dicoding Predictive Analytics - Prediksi Harga British Pound Sterling ke United States Dollar
 Predictive Analytics Dicoding Tentang Pergerakan Harga Mata Uang Pound Sterling terhadap United States Dollar 
 
-**Domain Investing**
-
 **Latar Belakang**: <br>
 GBP/USD adalah pasangan mata uang yang mencerminkan nilai tukar antara Poundsterling Inggris (GBP) dan Dolar Amerika Serikat (USD). Ketika melihat kuotasi harga GBP/USD, misalnya 1.2800, itu berarti 1 Poundsterling setara dengan 1.2800 Dolar AS. Nilai tukar Pound Sterling (GBP) terhadap Dolar AS (USD) merupakan salah satu pasokan mata uang yang sangat penting dalam perdagangan internasional. Nilai tukar ini mempengaruhi harga barang dan jasa antara kedua negara, serta investasi dan kebijakan moneter. Fluktuasi nilai tukar ini dapat disebabkan oleh berbagai faktor seperti perubahan kebijakan fiskal dan moneter, kondisi ekonomi global, dan kekhawatiran investasi.
 
