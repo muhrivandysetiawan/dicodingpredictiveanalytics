@@ -19,16 +19,16 @@ Investing.com. (n.d.). Harga Mata Uang Pound Sterling terhadap US Dollar. Retrie
 
 Berdasarkan latar belakang yang telah dipaparkan di atas, berikut ini adalah permasalahan dan tujuan yang diperoleh adalah sebagai berikut:
 - **Problem Statements**: <br>
-  1. Volatilitas Harga: Bagaimana cara mengatasi fluktuasi nilai tukar GBP/USD yang tinggi yang dapat menyebabkan ketidakpastian dalam perdagangan dan investasi internasional?
-  2. Faktor Eksternal: Harga GBP/USD dipengaruhi oleh banyak faktor eksternal seperti kebijakan moneter, ekonomi global, dan stabilitas politik, yang dapat mempersulit prediksi yang akurat.
+  1. Bagaimana cara memprediksi fluktuasi nilai tukar mata uang GBP/USD dengan akurasi tinggi untuk mendukung pengambilan keputusan investasi dan bisnis?
+  2. Bagaimana cara mereduksi dimensi data historis nilai tukar GBP/USD tanpa kehilangan informasi penting untuk meningkatkan kinerja model machine learning?
 - **Goals**:<br>
-  1. Analisis Mendalam: Mengembangkan model prediksi yang lebih akurat dengan menggunakan data historis dan metode analisis canggih.
-  2. Stabilitas Ekonomi: Memberikan rekomendasi kebijakan kepada pembuat kebijakan untuk membantu menjaga stabilitas nilai tukar dan mengurangi volatilitas yang berlebihan.
-
-Dari Problem Statement dan Goals di atas, solusi yang ditawarkan adalah sebagai berikut:
+  1. Mengembangkan model yang dapat memprediksi nilai tukar GBP/USD dengan akurasi tinggi.
+  2. Mengurangi dimensi data historis nilai tukar GBP/USD tanpa kehilangan informasi penting.
+  
+Dari Problem Statement dan Goals di atas, solusi yang ditawarkan adalah sebagai berikut: <br>
 **Solution Statement**: <br>
-1. Menggunakan metode Exploratory Data Analysis/(EDA) yang meliputi Analisis Univariat dan Multivariat untuk melihat data tanggal dan harga GBP/USD sebelum melakukan time series.
-2. Menggunakan metode pelatihan Long Short Term Memory/(LSTM) yang dirancang untuk melatih perubahan harga GBP/USD dibandingkan menggunakan data tradisional seperti Auto Regressive Integrated Moving Average/(ARIMA).
+1. Model LSTM (Long Short-Term Memory) digunakan untuk mempelajari pola historis dan menghasilkan prediksi nilai tukar GBP/USD di masa depan.
+2. Principal Component Analysis (PCA) digunakan untuk mereduksi dimensi data, sehingga model machine learning dapat bekerja lebih efisien.
 
 # Data Understanding
 
