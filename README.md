@@ -179,10 +179,12 @@ Loss adalah suatu fungsi yang digunakan untuk minimalisir perbedaan antara nilai
 Ini adalah hasil model pelatihan pada variabel Loss <br>
 ![Loss Result](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2016.png)
 
+Pada grafik di atas, terlihat perubahan nilai loss selama proses pelatihan model. Garis biru menunjukkan loss pada data pelatihan, sementara garis oranye menunjukkan loss pada data validasi. Grafik ini menunjukkan bahwa loss pada data pelatihan dan validasi cenderung menurun seiring bertambahnya jumlah epoch, meskipun terdapat beberapa fluktuasi. Hal ini mengindikasikan bahwa model mengalami proses pelatihan yang baik dan mampu meminimalisir kesalahan prediksi.
+
 Ini adalah hasil model pelatihan pada variabel MAE <br>
 ![MAE Result](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2017.png)
 
-Menjelaskan metrik evaluasi yang digunakan untuk mengukur kinerja model. Misalnya, menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
+Grafik di atas menampilkan nilai Mean Absolute Error (MAE) pada model selama proses pelatihan. Garis biru menunjukkan MAE pada data pelatihan, sementara garis oranye menunjukkan MAE pada data validasi. Terlihat bahwa nilai MAE secara umum menurun seiring bertambahnya jumlah epoch, meskipun terdapat beberapa fluktuasi pada garis oranye, mengindikasikan bahwa model semakin baik dalam memprediksi nilai target.
 
 Berikut ini adalah hasil prediksi dari pelatihan di bawah ini
 ![Hasil Prediksi](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2018.png)
