@@ -10,8 +10,6 @@ Masalah utama dari kasus ini adalah sering terjadi volatilitas nilai tukar yang 
 **Penyelesaian**: <br>
 Untuk menyelesaikan masalah ini, diperlukan kebijakan yang tepat dari pemerintah dan bank sentral dari kedua negara, baik dari pihak Inggris maupun pihak Amerika Serikat untuk menjaga stabilitas nilai tukar. Kebijakan fiskal yang sehat dan kebijakan moneter yang tepat dapat membantu mengurangi volatilitas. Selain itu, kerjasama internasional dan komunikasi yang baik antara negara-negara juga penting untuk menjaga stabilitas pasar mata uang.
 
-**Referensi**: <br>
-Investing.com. (n.d.). Harga Mata Uang Pound Sterling terhadap US Dollar. Retrieved from https://id.investing.com/currencies/gbp-usd?form=MG0AV3
 
 # Business Understanding
 
@@ -188,3 +186,24 @@ Menjelaskan metrik evaluasi yang digunakan untuk mengukur kinerja model. Misalny
 Berikut ini adalah hasil prediksi dari pelatihan di bawah ini
 ![Hasil Prediksi](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2018.png)
 dimana garis merah adalah Harga Prediksi dan garis biru adalah Prediksi yang sebenarnya.   
+
+
+# Kesimpulan 
+Berdasarkan hasil proyek ini, model LSTM yang dikembangkan berhasil memprediksi nilai tukar GBP/USD dengan akurasi yang cukup baik, seperti terlihat pada grafik hasil prediksi yang menunjukkan tren yang mirip antara harga aktual dan prediksi. Penggunaan PCA untuk reduksi dimensi data historis terbukti efektif dalam meningkatkan efisiensi model tanpa kehilangan informasi penting, yang tercermin dari performa model yang baik. Meskipun masih ada ruang untuk perbaikan, proyek ini telah mencapai tujuannya dalam mengembangkan model prediksi nilai tukar yang akurat dan menerapkan teknik reduksi dimensi yang efektif.
+
+Berikut ini adalah kelebihan hasil dari proyek ini adalah:
+1. Penggunaan model LSTM yang tepat untuk kasus time series keuangan, memungkinkan model untuk menangkap pola kompleks dalam pergerakan nilai tukar GBP/USD.
+2. Penerapan PCA untuk reduksi dimensi membantu meningkatkan efisiensi komputasi dan mengurangi potensi overfitting.
+3. Implementasi teknik preprocessing yang komprehensif, termasuk MinMaxScaler dan Window Dataset dimana teknik ini membantu meningkatkan kinerja model.
+4. Visualisasi yang cukup baik untuk analisis univariat dan multivariat, membantu pemahaman mendalam tentang karakteristik data.
+5. Penggunaan metrik evaluasi yang relevan, baik dari MAE dan Loss untuk mengukur kinerja model dalam konteks prediksi nilai tukar.
+
+Berikut ini adalah kelebihan hasil dari proyek ini adalah:
+1. Tidak adanya perbandingan dengan model baseline atau model alternatif, yang bisa memberikan konteks lebih baik tentang seberapa baik kinerja model LSTM.
+2. Kurangnya analisis mendalam tentang faktor-faktor eksternal yang memengaruhi nilai tukar, seperti kebijakan moneter atau peristiwa geopolitik.
+3. Tidak disebutkan adanya validasi silang atau pengujian pada data out-of-sample untuk memastikan generalisasi model.
+4. Kurangnya penjelasan tentang interpretasi hasil PCA dan bagaimana komponen utama dipilih untuk digunakan dalam model.
+5. Tidak adanya diskusi tentang potensi overfitting atau underfitting, yang penting dalam evaluasi model machine learning.Kurangnya analisis tentang implikasi praktis dari hasil prediksi, seperti bagaimana model ini bisa digunakan dalam pengambilan keputusan investasi atau bisnis.
+
+**Referensi**: <br>
+Investing.com. (n.d.). Harga Mata Uang Pound Sterling terhadap US Dollar. Retrieved from https://id.investing.com/currencies/gbp-usd?form=MG0AV3
