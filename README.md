@@ -126,16 +126,31 @@ Berikut ini adalah Pairplot dan Correlation Matrix dari kolo yang tersedia:
 ![Correlation Matrix](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2015.png)
 
 # Data Preparation
+Persiapan Data yang telah dilakukan adalah sebagai berikut:
+1. Pengumpulan Data
+2. Data Cleaning (Menghilangkan Kolom Volume)
+3. Data Convert (Mengubah data Date dan Change % menjadi datetime64 dan float64)
+4. Exploratory Data Analysis (EDA)
+5. Principal Component Analysis (PCA)
+6. Menggunakan MinMaxScaler
+7. Menerapkan Window Dataset
+
 
 Langkah yang dilakukan untuk persiapan data adalah sebagai berikut: <br>
 1. Melakukan PCA dengan menggunakan PCA dari sklearn
 2. Menginterpretasikan Komponen Utama denganmelihat varians yang dijelaskan oleh masing-masing komponen
+3. Menggunakan MinMaxScaler
+4. Menerapkan Window Dataset
 
 Menjelaskan proses data preparation yang dilakukan <br>
 Alasan melakukan persiapan data menggunakan PCA sebagai berikut: <br>
 - Reduksi Dimensi: PCA membantu mengurangi jumlah fitur dalam dataset, yang dapat meningkatkan kinerja dan mengurangi overfitting dalam model prediksi. <br>
 - Meningkatkan Efisiensi: Dengan mengurangi jumlah fitur, waktu komputasi untuk pelatihan model juga berkurang. <br>
 - Mengatasi Multikolinearitas: PCA dapat mengatasi masalah multikolinearitas dengan mengubah fitur asli menjadi sekumpulan komponen utama yang orthogonal satu sama lain. <br>
+
+Alasan melakukan persiapan data menggunakan MinMaxScaler adalah agar bisa mencegah fitur dengan skala yang lebih besar mendominasi proses pelatihan model.Fitur ini sangat penting saat menggabungkan fitur dengan satuan atau skala yang berbeda.
+
+Alasan melakukan persiapan data menggunakan Window Dataset adalah agar model ini dapat belajar ketergantungan temporal dalam data. Model ini dapat lebih memahami urutan dan meningkatkan akurasi prediksinya untuk data masa depan.
 
 # Modeling
 
@@ -151,27 +166,27 @@ Ini adalah tabel untuk modelling LSTM
 | dense (Dense)      | (None, 50)        | 5,050     | 
 | dense_1 (Dense)    | (None, 1)         | 51        |
 
+**Kelebihan LSTM**: Mampu menangani data sekuensial dengan lebih baik, mampu mengatasi masalah vanishing gradient.
+**Kekurangan LSTM**:  Memerlukan waktu pelatihan yang lebih lama, lebih kompleks dibandingkan model tradisional.
 
-Membuat model machine learning untuk menyelesaikan permasalahan.
-Menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
-
-
-Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
-Jika menggunakan satu algoritma pada solution statement, lakukan proses improvement terhadap model dengan hyperparameter tuning. Jelaskan proses improvement yang dilakukan.
-Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. Jelaskan mengapa memilih model tersebut sebagai model terbaik.
+Improvisasi pada proyek di atas adalah
+1. SGD dengan Momentum, parameter ini mempercepat proses pelatihan dengan melewati gradien yang kecil.
+2. Adam Optimizer, parameter ini efektif dalam menangani gradien yang jarang terjadi dengan mengadaptasi laju pembelajaran.
+3. Huber Loss dengan MAE, parameter ini digunakan untuk mengukur Error dalam Time Series. 
 
 # Evaluation
-Menyebutkan metrik evaluasi yang digunakan.
-Menjelaskan hasil proyek berdasarkan metrik evaluasi.
-Metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
+
+MAE mengukur rata-rata kesalahan dalam satu set prediksi, tanpa memperhatikan arah kesalahannya (positif atau negatif) sementara  Loss Metric sering merujuk pada fungsi yang digunakan selama pelatihan untuk meminimalkan perbedaan antara nilai prediksi dan nilai aktual. 
+
+Ini adalah hasil model pelatihan pada variabel Loss <br>
+![Loss Result](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2016.png)
+
+Ini adalah hasil model pelatihan pada variabel MAE <br>
+![MAE Result](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2017.png)
+
 
 Menjelaskan metrik evaluasi yang digunakan untuk mengukur kinerja model. Misalnya, menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
 
-
-Struktur Laporan
-Laporan harus dapat dimengerti oleh pembaca dengan mengikuti beberapa ketentuan sebagai berikut :
-
-Mengikuti struktur yang benar dan terorganisir sesuai template laporan.
-
-Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
-Resources (seperti gambar) harus bisa dimuat dengan baik oleh reader jika menggunakan markdown.
+Berikut ini adalah hasil prediksi dari pelatihan di bawah ini
+![Hasil Prediksi](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2018.png)
+dimana garis merah adalah Harga Prediksi dan garis biru adalah Prediksi yang sebenarnya.   
