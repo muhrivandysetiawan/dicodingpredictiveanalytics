@@ -42,7 +42,7 @@ Tips: Data ini bisa diambil sesuai dengan keinginan. Misalnya data diambil dari 
 | 5  | Low      | 2816        | Float64   | Harga terendah pada tanggal tersebut            |
 | 6  | Change % | 2816        | Object    | Persentase perubahan harga dari hari sebelumnya |
 
-Ini adalah isi data dari harga . Tipe data ini tidak bisa dipakai untuk melakukan analisis univariat, maka harus diubah menjadi datetime64 dan float64 agar bisa diperkirakan. Hasilnya terdapat tabel di bawah ini:
+Ini adalah isi data dari harga British Pound Sterling dalam US Dollar. Tipe data ini tidak bisa dipakai untuk melakukan analisis univariat, maka harus diubah menjadi datetime64 dan float64 agar bisa diperkirakan. Hasilnya terdapat tabel di bawah ini:
 
 | No.| Kolom    | Jumlah Data | Tipe Data      | Penjelasan                                      |
 |----|----------|-------------|----------------|-------------------------------------------------|
