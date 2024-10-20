@@ -18,23 +18,23 @@ Investing.com. (n.d.). Harga Mata Uang Pound Sterling terhadap US Dollar. Retrie
 # Business Understanding
 
 Berdasarkan latar belakang yang telah dipaparkan di atas, berikut ini adalah permasalahan dan tujuan yang diperoleh adalah sebagai berikut:
-- **Problem Statements**:
+- **Problem Statements**: <br>
   1. Volatilitas Harga: Bagaimana cara mengatasi fluktuasi nilai tukar GBP/USD yang tinggi yang dapat menyebabkan ketidakpastian dalam perdagangan dan investasi internasional?
   2. Faktor Eksternal: Harga GBP/USD dipengaruhi oleh banyak faktor eksternal seperti kebijakan moneter, ekonomi global, dan stabilitas politik, yang dapat mempersulit prediksi yang akurat.
-- **Goals**:
+- **Goals**:<br>
   1. Analisis Mendalam: Mengembangkan model prediksi yang lebih akurat dengan menggunakan data historis dan metode analisis canggih.
   2. Stabilitas Ekonomi: Memberikan rekomendasi kebijakan kepada pembuat kebijakan untuk membantu menjaga stabilitas nilai tukar dan mengurangi volatilitas yang berlebihan.
 
 Dari Problem Statement dan Goals di atas, solusi yang ditawarkan adalah sebagai berikut:
-**Solution Statement**:
+**Solution Statement**: <br>
 1. Menggunakan metode Exploratory Data Analysis/(EDA) yang meliputi Analisis Univariat dan Multivariat untuk melihat data tanggal dan harga GBP/USD sebelum melakukan time series.
 2. Menggunakan metode pelatihan Long Short Term Memory/(LSTM) yang dirancang untuk melatih perubahan harga GBP/USD dibandingkan menggunakan data tradisional seperti Auto Regressive Integrated Moving Average/(ARIMA).
 
 # Data Understanding
 
-Data yang diambil untuk proyek ini adalah data harga GBP/USD yang meliputi Date, Price, Open, High, Low, Volume, dan Change %. Dikarenakan nilai Volume ddalam data ini tidak dicantumkan, maka bisa dihapus dan menyisakan Date, Price, Open, High, Low, dan Change %. Data ini diambil dari 1 Januari 2014 sampai 14 Oktober 2024. 
+Data yang diambil untuk proyek ini adalah data harga GBP/USD yang meliputi Date, Price, Open, High, Low, Volume, dan Change %. Dikarenakan nilai Volume ddalam data ini tidak dicantumkan, maka bisa dihapus dan menyisakan Date, Price, Open, High, Low, dan Change %. Data ini diambil dari 1 Januari 2014 sampai 14 Oktober 2024. <br>
 Sumber datanya adalah sebagai berikut: <br>
-[https://www.investing.com/currencies/gbp-usd-historical-data]
+[https://www.investing.com/currencies/gbp-usd-historical-data]  <br>
 Tips: Data ini bisa diambil sesuai dengan keinginan. Misalnya data diambil dari 2019 sampai 2024, dan 2010 smapai 2024.
 
 | No.| Kolom    | Jumlah Data | Tipe Data | Penjelasan                                      |
@@ -73,25 +73,88 @@ Pada tabel di bawah ini, dijelaskan status harga dari 4 kolom, mulai dari rata-r
 Boxplot adalah jenis visualisasi data yang digunakan untuk menunjukkan distribusi data berdasarkan lima ringkasan statistik utama: minimum, kuartil pertama (Q1), median, kuartil ketiga (Q3), dan maksimum. Ini juga menunjukkan potensi outliers atau nilai ekstrim dalam data. Boxplot dapat membantu dalam analisis awal data historis GBP/USD dengan memberikan gambaran tentang distribusi dan variabilitas harga. Ini sangat penting untuk memahami Volatilitas, Trend Analysis, dan Outliers
 
 Berikut ini adalah Boxplot dari berbagai kolom
-1. Price
-2. Open
-3. High
-4. Low
-5. Change %
+1. Price <br>
+![BloxPlot Price](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%201.png)
+2. Open <br>
+![BloxPlot Open](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%202.png)
+3. High <br>
+![BloxPlot High](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%203.png)
+4. Low <br>
+![BloxPlot Low](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%204.png)
+5. Change % <br>
+![BloxPlot Change %](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%205.png)
 
-Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
+Analisis univariat adalah jenis analisis data yang hanya melibatkan satu variabel pada satu waktu sedangkan Analisis multivariat adalah jenis analisis data yang melibatkan lebih dari satu variabel secara bersamaan.
+
+**Analisis Univariat**:
+1. Price <br>
+![Univariat Price](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%206.png)
+2. Open <br>
+![Univariat Open](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%207.png)
+3. High <br>
+![Univariat High](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%208.png)
+4. Low <br>
+![Univariat Low](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%209.png)
+5. Change % <br>
+![Univariat Change %](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2010.png)
+
+
+Ini adalah diagram Pair GBPUSD dari 1 Januari 2014 sampai 16 Oktober 2024 yang terdiri dari Price sebagai label x dan Date sebagai label y: <br>
+![Chart Pair GBPUSD](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2011.png)
+
+Ini juga adalah diagram perubahan kenaikan dan penurunan pair GBPUSD dari 1 Januari 2014 sampai 16 Oktober 2024: <br>
+![Chart Change %](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2012.png)
+
+**Analisis Multivariat**:
+
+Analisis ini merupakan gabungan dari kolom Price, Open, High Low sebagai label x da Date sebagai label y <br>
+![Chart Pair GBPUSD Multivariat](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2013.png)
+
+Pairplot adalah jenis visualisasi yang digunakan untuk melihat distribusi dan hubungan antar beberapa variabel dalam dataset. Pairplot menghasilkan scatter plots untuk setiap pasangan variabel, serta histogram atau KDE plots untuk distribusi dari masing-masing variabel di diagonal. Ini membantu dalam mengidentifikasi pola, korelasi, dan outliers dalam data.
+
+Correlation Matrix adalah tabel yang menunjukkan koefisien korelasi antara setiap pasangan variabel dalam dataset. Nilai korelasi berkisar dari -1 hingga 1, di mana:
+- 1 menunjukkan korelasi positif sempurna
+- 0 menunjukkan tidak ada korelasi
+- -1 menunjukkan korelasi negatif sempurna
+
+Matrix ini sangat berguna untuk mengidentifikasi variabel-variabel yang berkaitan erat satu sama lain dan bisa memberikan wawasan tentang hubungan linear dalam data.
+
+Berikut ini adalah Pairplot dan Correlation Matrix dari kolo yang tersedia:
+1. Pairplot <br>
+![Pairplot](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2014.png)
+1. Correlation Matrix <br>
+![Correlation Matrix](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2015.png)
 
 # Data Preparation
-Menerapkan dan menyebutkan teknik data preparation yang dilakukan.
-Teknik yang digunakan pada notebook dan laporan harus berurutan.
 
-Menjelaskan proses data preparation yang dilakukan
-Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+Langkah yang dilakukan untuk persiapan data adalah sebagai berikut: <br>
+1. Melakukan PCA dengan menggunakan PCA dari sklearn
+2. Menginterpretasikan Komponen Utama denganmelihat varians yang dijelaskan oleh masing-masing komponen
 
+Menjelaskan proses data preparation yang dilakukan <br>
+Alasan melakukan persiapan data menggunakan PCA sebagai berikut: <br>
+- Reduksi Dimensi: PCA membantu mengurangi jumlah fitur dalam dataset, yang dapat meningkatkan kinerja dan mengurangi overfitting dalam model prediksi. <br>
+- Meningkatkan Efisiensi: Dengan mengurangi jumlah fitur, waktu komputasi untuk pelatihan model juga berkurang. <br>
+- Mengatasi Multikolinearitas: PCA dapat mengatasi masalah multikolinearitas dengan mengubah fitur asli menjadi sekumpulan komponen utama yang orthogonal satu sama lain. <br>
 
 # Modeling
+
+LSTM (Long Short-Term Memory) adalah jenis jaringan saraf tiruan yang digunakan dalam deep learning untuk menangani data urutan atau time series. LSTM sangat efektif untuk tugas yang melibatkan data urutan panjang seperti prediksi harga saham atau pasangan mata uang (seperti GBP/USD), pemrosesan bahasa alami (NLP), dan prediksi cuaca.
+
+Ini adalah tabel untuk modelling LSTM
+| Layer (type)       | Output Shape      | Parameter |
+|--------------------|-------------------|-----------|
+| lstm (LSTM)        | (None, None, 64)  | 16,896    |
+| dropout (Dropout)  | (None, None, 64)  | 0         |
+| lstm_1 (LSTM)      | (None, 100)       | 66,000    |
+| dropout_1 (Dropout)| (None, 100)       | 0         |
+| dense (Dense)      | (None, 50)        | 5,050     | 
+| dense_1 (Dense)    | (None, 1)         | 51        |
+
+
 Membuat model machine learning untuk menyelesaikan permasalahan.
 Menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
+
 
 Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
 Jika menggunakan satu algoritma pada solution statement, lakukan proses improvement terhadap model dengan hyperparameter tuning. Jelaskan proses improvement yang dilakukan.
