@@ -172,14 +172,15 @@ Improvisasi pada proyek di atas adalah
 
 # Evaluation
 
-MAE mengukur rata-rata kesalahan dalam satu set prediksi, tanpa memperhatikan arah kesalahannya (positif atau negatif) sementara  Loss Metric sering merujuk pada fungsi yang digunakan selama pelatihan untuk meminimalkan perbedaan antara nilai prediksi dan nilai aktual. 
+MAE adalah rata-rata dari selisih absolut antara nilai prediksi dan nilai aktual. Semakin rendah MAE, semakin akurat prediksi model. MAE menunjukkan seberapa besar rata-rata kesalahan yang kita buat dalam satuan asli data, misalnya dalam dolar jika kita memprediksi harga.
+
+Loss adalah suatu fungsi yang digunakan untuk minimalisir perbedaan antara nilai prediksi dan nilai aktual. Contoh Loss yang digunakan adalah Mean Squared Error (MSE) atau Huber Loss. Loss ini memiliki fungsi untuk membantu algoritma belajar dengan memberikan sinyal sejauh mana prediksi dari target sebenarnya.
 
 Ini adalah hasil model pelatihan pada variabel Loss <br>
 ![Loss Result](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2016.png)
 
 Ini adalah hasil model pelatihan pada variabel MAE <br>
 ![MAE Result](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2017.png)
-
 
 Menjelaskan metrik evaluasi yang digunakan untuk mengukur kinerja model. Misalnya, menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
 
