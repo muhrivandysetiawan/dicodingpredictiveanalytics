@@ -2,7 +2,7 @@
 Predictive Analytics Dicoding Tentang Pergerakan Harga Mata Uang Pound Sterling terhadap United States Dollar 
 
 **Latar Belakang**: <br>
-GBP/USD adalah pasangan mata uang yang mencerminkan nilai tukar antara Poundsterling Inggris (GBP) dan Dolar Amerika Serikat (USD). Ketika melihat kuotasi harga GBP/USD, misalnya 1.2800, itu berarti 1 Poundsterling setara dengan 1.2800 Dolar AS. Nilai tukar Pound Sterling (GBP) terhadap Dolar AS (USD) merupakan salah satu pasokan mata uang yang sangat penting dalam perdagangan internasional. Nilai tukar ini mempengaruhi harga barang dan jasa antara kedua negara, serta investasi dan kebijakan moneter. Fluktuasi nilai tukar ini dapat disebabkan oleh berbagai faktor seperti perubahan kebijakan fiskal dan moneter, kondisi ekonomi global, dan kekhawatiran investasi.
+GBP/USD adalah pasangan mata uang yang mencerminkan nilai tukar antara Poundsterling Inggris (GBP) dan Dolar Amerika Serikat (USD). Ketika menganalisis pada suatu grafik harga GBP/USD, misalnya 1.2800, artinya 1 Poundsterling setara dengan 1.2800 Dolar AS. Pertukaran Nilai Pound Sterling (GBP) terhadap Dolar AS (USD) merupakan salah satu pasokan mata uang yang  penting dalam perdagangan antar dua negara. Pertukaran niali ini mempengaruhi harga barang dan jasa antara kedua negara, serta investasi dan kebijakan moneter. Nilai tukar yang fluktuatif ini bisa disebabkan oleh berbagai faktor seperti perubahan kebijakan fiskal dan moneter, kondisi ekonomi global, dan kecemasan investasi.
 
 **Masalah yang Perlu Diselesaikan**: <br>
 Masalah utama dari kasus ini adalah sering terjadi volatilitas nilai tukar yang dapat menimbulkan ketidakpastian ekonomi dan dampak negatif dalam suatu perdagangan. Perubahan nilai tukar yang drastis dapat menyebabkan ketidakstabilan pasar, meningkatkan biaya impor, dan mengurangi daya saing produk domestik.
@@ -23,15 +23,15 @@ Berdasarkan latar belakang yang telah dipaparkan di atas, berikut ini adalah per
   
 Dari Problem Statement dan Goals di atas, solusi yang ditawarkan adalah sebagai berikut: <br>
 **Solution Statement**: <br>
-1. Model LSTM (Long Short-Term Memory) digunakan untuk mempelajari pola historis dan menghasilkan prediksi nilai tukar GBP/USD di masa depan.
-2. Principal Component Analysis (PCA) digunakan untuk mereduksi dimensi data, sehingga model machine learning dapat bekerja lebih efisien.
+1. Model LSTM (Long Short-Term Memory) digunakan untuk mempelajari pola historis dan menghasilkan prediksi nilai tukar GBP/USD pada beberapa hari ke depan.
+2. Principal Component Analysis (PCA) digunakan untuk mereduksi dimensi data, sehingga model machine learning dapat bekerja lebih efektif dan efisien.
 
 # Data Understanding
 
-Data yang diambil untuk proyek ini adalah data harga GBP/USD yang meliputi Date, Price, Open, High, Low, Volume, dan Change %. Dikarenakan nilai Volume ddalam data ini tidak dicantumkan, maka bisa dihapus dan menyisakan Date, Price, Open, High, Low, dan Change %. Data ini diambil dari 1 Januari 2014 sampai 14 Oktober 2024. <br>
+Data yang diambil untuk proyek ini adalah data harga GBP/USD yang meliputi Date, Price, Open, High, Low, Volume, dan Change %. Dikarenakan nilai Volume ddalam data ini tidak dicantumkan, maka bisa dihapus dan menyisakan Date, Price, Open, High, Low, dan Change %. Data ini diambil dari 1 Januari 2014 sampai 14 Oktober 2024 karena proyek ini meneliti perkebangan pertukaran nilai ini dalam 10 tahun terakhir. <br>
 Sumber datanya adalah sebagai berikut: <br>
 [https://www.investing.com/currencies/gbp-usd-historical-data]  <br>
-Tips: Data ini bisa diambil sesuai dengan keinginan. Misalnya data diambil dari 2019 sampai 2024, dan 2010 smapai 2024.
+Tips: Data ini bisa diambil sesuai dengan keinginan. Misalnya data diambil dari 2019 sampai 2024, dan 2010 sampai 2024.
 
 | No.| Kolom    | Jumlah Data | Tipe Data | Penjelasan                                      |
 |----|----------|-------------|-----------|-------------------------------------------------|
@@ -53,7 +53,7 @@ Ini adalah isi data dari harga British Pound Sterling dalam US Dollar. Tipe data
 | 5  | Low      | 2816        | Float64        | Harga terendah pada tanggal tersebut            |
 | 6  | Change % | 2816        | Float64        | Persentase perubahan harga dari hari sebelumnya |
 
-Pada tabel di bawah ini, dijelaskan status harga dari 4 kolom, mulai dari rata-rata,standar deviasi, median, kuartil 1, kuartil 3, minimal, dan maksimal. 
+Pada tabel di bawah ini, dijelaskan status harga dari 4 kolom, mulai dari frekuensi, rata-rata,standar deviasi, median, kuartil 1, kuartil 3, minimal, dan maksimal. 
 
 | Status | Price     | Open      | High      | Low       |
 |--------|-----------|-----------|-----------|-----------|
@@ -98,7 +98,7 @@ Analisis univariat adalah jenis analisis data yang hanya melibatkan satu variabe
 Ini adalah diagram Pair GBPUSD dari 1 Januari 2014 sampai 16 Oktober 2024 yang terdiri dari Price sebagai label x dan Date sebagai label y: <br>
 ![Chart Pair GBPUSD](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2011.png)
 
-Ini juga adalah diagram perubahan kenaikan dan penurunan pair GBPUSD dari 1 Januari 2014 sampai 16 Oktober 2024: <br>
+Ini juga adalah diagram perubahan kenaikan dan penurunan pair GBPUSD dari 1 Januari 2014 sampai 16 Oktober 2024 yang terdiri dari Date sebagai label x dan Change % sebagai label y: <br>
 ![Chart Change %](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2012.png)
 
 **Analisis Multivariat**:
