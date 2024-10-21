@@ -173,28 +173,15 @@ Improvisasi pada proyek di atas adalah
 # Evaluation
 
 MAE adalah rata-rata dari selisih absolut antara nilai prediksi dan nilai aktual. Semakin rendah MAE, semakin akurat prediksi model. MAE menunjukkan seberapa besar rata-rata kesalahan yang kita buat dalam satuan asli data, misalnya dalam dolar jika kita memprediksi harga.
-![Image 19](https://github.com/user-attachments/assets/072990da-7f18-47c9-bb18-43fdfb5ba7ab)
 
-dimana di mana 𝑦𝑖 adalah nilai sebenarnya dan 𝑦^𝑖 adalah prediksi model. Semakin kecil nilai Loss, semakin baik model dalam memprediksi data dengan akurasi yang lebih tinggi.
-
-Loss adalah suatu fungsi yang digunakan untuk minimalisir perbedaan antara nilai prediksi dan nilai aktual. Contoh Loss yang digunakan adalah Mean Squared Error (MSE) atau Huber Loss. Loss ini memiliki fungsi untuk membantu algoritma belajar dengan memberikan sinyal sejauh mana prediksi dari target sebenarnya.
-
-Loss ini dihitung menggunakan rumus Mean Squared Error (MSE) untuk masalah ini, yang diformulasikan sebagai:
 ![Image 20](https://github.com/user-attachments/assets/07c889ec-7bdb-4d47-abc1-12c6111e3dc1)
 
-di mana:
-𝑛 = Jumlah data
-𝑦𝑖 = Nilai sebenarnya untuk data ke-𝑖
-𝑦^𝑖 = Nilai prediksi dari model untuk data ke-𝑖
+di mana: <br>
+𝑛 = Jumlah data <br>
+𝑦𝑖 = Nilai sebenarnya untuk data ke-𝑖 <br>
+𝑦^𝑖 = Nilai prediksi dari model untuk data ke-𝑖 <br>
 
 MAE mengukur seberapa besar rata-rata kesalahan absolut antara nilai sebenarnya dan prediksi, tanpa mengkuadratkan kesalahan tersebut. Karena itu, nilai MAE menunjukkan seberapa jauh model berada dari nilai aktual secara langsung dalam unit yang sama dengan data.
-
-Ini adalah hasil model pelatihan pada variabel Loss <br>
-![Image 16](https://github.com/user-attachments/assets/c3afc450-136c-4bf6-baa6-71b716a53e41)
-
-Pada grafik di atas, terlihat perubahan nilai loss selama proses pelatihan model. Garis biru menunjukkan loss pada data pelatihan, sementara garis oranye menunjukkan loss pada data validasi. Grafik ini menunjukkan bahwa loss pada data pelatihan dan validasi cenderung menurun seiring bertambahnya jumlah epoch, meskipun terdapat beberapa fluktuasi. Hal ini mengindikasikan bahwa model mengalami proses pelatihan yang baik dan mampu meminimalisir kesalahan prediksi. Grafik menunjukkan bahwa pada awal pelatihan, Training Loss dan Validation Loss cukup tinggi namun menurun seiring bertambahnya epoch, meskipun Validation Loss tampak berfluktuasi secara signifikan. <br>
-
-Pada titik akhir pelatihan, perlu disebutkan nilai Loss untuk Training dan Validation saat model berhenti (misalnya, di epoch 200). Dari grafik, terlihat Training Loss lebih stabil dan rendah dibandingkan Validation Loss. <br>
 
 Ini adalah hasil model pelatihan pada variabel MAE <br>
 ![Image 17](https://github.com/user-attachments/assets/b7058c03-e3da-4942-aa1d-f65890839387)
