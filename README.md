@@ -70,41 +70,41 @@ Boxplot adalah jenis visualisasi data yang digunakan untuk menunjukkan distribus
 
 Berikut ini adalah Boxplot dari berbagai kolom
 1. Price <br>
-![BloxPlot Price](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%201.png)
+![Image 1](https://github.com/user-attachments/assets/880fe418-25d9-4ba7-a6cf-c11c6dfc5082)
 2. Open <br>
-![BloxPlot Open](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%202.png)
+![Image 2](https://github.com/user-attachments/assets/27a66147-8764-439c-958b-3ea2db640575)
 3. High <br>
-![BloxPlot High](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%203.png)
+![Image 3](https://github.com/user-attachments/assets/98496ef8-a7bf-4135-8eb8-972a4983ca82)
 4. Low <br>
-![BloxPlot Low](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%204.png)
+![Image 4](https://github.com/user-attachments/assets/a4fcae87-619b-402b-8a81-a57010604b5f)
 5. Change % <br>
-![BloxPlot Change %](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%205.png)
+![Image 5](https://github.com/user-attachments/assets/9dd7d3d4-29a8-4416-ad17-f2d9b54165db)
 
 Analisis univariat adalah jenis analisis data yang hanya melibatkan satu variabel pada satu waktu sedangkan Analisis multivariat adalah jenis analisis data yang melibatkan lebih dari satu variabel secara bersamaan.
 
 **Analisis Univariat**:
 1. Price <br>
-![Univariat Price](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%206.png)
+![Image 6](https://github.com/user-attachments/assets/b0df03d4-25e5-4760-9966-ab10fbbba17f)
 2. Open <br>
-![Univariat Open](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%207.png)
+![Image 7](https://github.com/user-attachments/assets/32e4cfe7-cd12-416c-a92e-2445aa5bf997)
 3. High <br>
-![Univariat High](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%208.png)
+![Image 8](https://github.com/user-attachments/assets/62ea63f1-a0c9-4935-aeac-04e1c57da090)
 4. Low <br>
-![Univariat Low](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%209.png)
+![Image 9](https://github.com/user-attachments/assets/748d9e4b-b1fd-41d4-b1ee-f50309452f2d)
 5. Change % <br>
-![Univariat Change %](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2010.png)
+![Image 10](https://github.com/user-attachments/assets/48fc95c1-d03b-4540-9d96-32db4d2783f5)
 
 
 Ini adalah diagram Pair GBPUSD dari 1 Januari 2014 sampai 16 Oktober 2024 yang terdiri dari Price sebagai label x dan Date sebagai label y: <br>
-![Chart Pair GBPUSD](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2011.png)
+![Image 11](https://github.com/user-attachments/assets/1f9ba653-16c3-483f-8ad4-f0a2f40b2864)
 
 Ini juga adalah diagram perubahan kenaikan dan penurunan pair GBPUSD dari 1 Januari 2014 sampai 16 Oktober 2024 yang terdiri dari Date sebagai label x dan Change % sebagai label y: <br>
-![Chart Change %](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2012.png)
+![Image 12](https://github.com/user-attachments/assets/9329699d-4c45-4f9f-a869-1ce5ed106711)
 
 **Analisis Multivariat**:
 
 Analisis ini merupakan gabungan dari kolom Price, Open, High Low sebagai label x da Date sebagai label y <br>
-![Chart Pair GBPUSD Multivariat](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2013.png)
+![Image 13](https://github.com/user-attachments/assets/f80ca5b5-f6f7-4abf-935e-7d7a8e615f89)
 
 Pairplot adalah jenis visualisasi yang digunakan untuk melihat distribusi dan hubungan antar beberapa variabel dalam dataset. Pairplot menghasilkan scatter plots untuk setiap pasangan variabel, serta histogram atau KDE plots untuk distribusi dari masing-masing variabel di diagonal. Ini membantu dalam mengidentifikasi pola, korelasi, dan outliers dalam data.
 
@@ -117,9 +117,9 @@ Matrix ini sangat berguna untuk mengidentifikasi variabel-variabel yang berkaita
 
 Berikut ini adalah Pairplot dan Correlation Matrix dari kolo yang tersedia:
 1. Pairplot <br>
-![Pairplot](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2014.png)
+![Image 14](https://github.com/user-attachments/assets/b313a52a-2793-4783-a554-5f8adc691153)
 1. Correlation Matrix <br>
-![Correlation Matrix](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2015.png)
+![Image 15](https://github.com/user-attachments/assets/6bc55a17-56c6-4f24-a0f8-16bb6d15d50c)
 
 # Data Preparation
 Persiapan Data yang telah dilakukan adalah sebagai berikut:
@@ -177,17 +177,17 @@ MAE adalah rata-rata dari selisih absolut antara nilai prediksi dan nilai aktual
 Loss adalah suatu fungsi yang digunakan untuk minimalisir perbedaan antara nilai prediksi dan nilai aktual. Contoh Loss yang digunakan adalah Mean Squared Error (MSE) atau Huber Loss. Loss ini memiliki fungsi untuk membantu algoritma belajar dengan memberikan sinyal sejauh mana prediksi dari target sebenarnya.
 
 Ini adalah hasil model pelatihan pada variabel Loss <br>
-![Loss Result](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2016.png)
+![Image 16](https://github.com/user-attachments/assets/c3afc450-136c-4bf6-baa6-71b716a53e41)
 
 Pada grafik di atas, terlihat perubahan nilai loss selama proses pelatihan model. Garis biru menunjukkan loss pada data pelatihan, sementara garis oranye menunjukkan loss pada data validasi. Grafik ini menunjukkan bahwa loss pada data pelatihan dan validasi cenderung menurun seiring bertambahnya jumlah epoch, meskipun terdapat beberapa fluktuasi. Hal ini mengindikasikan bahwa model mengalami proses pelatihan yang baik dan mampu meminimalisir kesalahan prediksi.
 
 Ini adalah hasil model pelatihan pada variabel MAE <br>
-![MAE Result](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2017.png)
+![Image 17](https://github.com/user-attachments/assets/b7058c03-e3da-4942-aa1d-f65890839387)
 
 Grafik di atas menampilkan nilai Mean Absolute Error (MAE) pada model selama proses pelatihan. Garis biru menunjukkan MAE pada data pelatihan, sementara garis oranye menunjukkan MAE pada data validasi. Terlihat bahwa nilai MAE secara umum menurun seiring bertambahnya jumlah epoch, meskipun terdapat beberapa fluktuasi pada garis oranye, mengindikasikan bahwa model semakin baik dalam memprediksi nilai target.
 
 Berikut ini adalah hasil prediksi dari pelatihan di bawah ini
-![Hasil Prediksi](https://github.com/muhrivandysetiawan/dicodingpredictiveanalytics/blob/main/Image/Image%2018.png)
+![Image 18](https://github.com/user-attachments/assets/7ce69426-9e29-4543-a592-5271d4d30e39)
 dimana garis merah adalah Harga Prediksi dan garis biru adalah Prediksi yang sebenarnya.   
 
 
