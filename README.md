@@ -201,7 +201,7 @@ Ini adalah hasil model pelatihan pada variabel MAE <br>
 
 Grafik di atas menampilkan nilai Mean Absolute Error (MAE) pada model selama proses pelatihan. Garis biru menunjukkan MAE pada data pelatihan, sementara garis oranye menunjukkan MAE pada data validasi. Terlihat bahwa nilai MAE secara umum menurun seiring bertambahnya jumlah epoch, meskipun terdapat beberapa fluktuasi pada garis oranye, mengindikasikan bahwa model semakin baik dalam memprediksi nilai target. Grafik itu juga tampak bahwa Training MAE konsisten menurun dan stabil setelah beberapa epoch, sedangkan Validation MAE mengalami fluktuasi besar, menunjukkan adanya variasi dalam performa model pada data validasi.
 
-Nilai MAE pada akhir pelatihan (epoch terakhir) perlu disebutkan secara spesifik, misalnya, berapa nilai MAE untuk data pelatihan dan validasi di epoch 200, untuk mengidentifikasi kinerja model saat pelatihan berakhir.
+Nilai MAE pada akhir pelatihan (epoch terakhir) yang tercantum adalah sebesar 0.015185105614364147, dimana hasil MAE itu cukup kecil dan nilai prediksi cukup rapat dengan nilai sebenarnya.
 
 Berikut ini adalah hasil prediksi dari pelatihan di bawah ini
 ![Image 18](https://github.com/user-attachments/assets/7ce69426-9e29-4543-a592-5271d4d30e39)
