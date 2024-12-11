@@ -1,14 +1,13 @@
 # Dicoding Predictive Analytics - Prediksi Harga British Pound Sterling ke United States Dollar
-Predictive Analytics Dicoding Tentang Pergerakan Harga Mata Uang Pound Sterling terhadap United States Dollar 
 
 **Latar Belakang**: <br>
-GBP/USD adalah pasangan mata uang yang mencerminkan nilai tukar antara Poundsterling Inggris (GBP) dan Dolar Amerika Serikat (USD). Ketika menganalisis pada suatu grafik harga GBP/USD, misalnya 1.2800, artinya 1 Poundsterling setara dengan 1.2800 Dolar AS. Pertukaran Nilai Pound Sterling (GBP) terhadap Dolar AS (USD) merupakan salah satu pasokan mata uang yang  penting dalam perdagangan antar dua negara. Pertukaran niali ini mempengaruhi harga barang dan jasa antara kedua negara, serta investasi dan kebijakan moneter. Nilai tukar yang fluktuatif ini bisa disebabkan oleh berbagai faktor seperti perubahan kebijakan fiskal dan moneter, kondisi ekonomi global, dan kecemasan investasi.
+Nilai tukar GBP/USD menunjukkan berapa banyak USD yang diperlukan untuk membeli satu GBP. Misalnya, jika nilai tukar berada pada 1,2800, artinya 1 GBP setara dengan 1,2800 USD. Fluktuasi nilai tukar ini dipengaruhi oleh berbagai faktor, termasuk kebijakan fiskal dan moneter, kondisi ekonomi global, serta peristiwa politik. Sebagai contoh, keputusan politik seperti Brexit telah terbukti mempengaruhi volatilitas nilai tukar GBP terhadap USD (Sari & Suryaningsih, 2017).  <br>
 
 **Masalah yang Perlu Diselesaikan**: <br>
-Masalah utama dari kasus ini adalah sering terjadi volatilitas nilai tukar yang dapat menimbulkan ketidakpastian ekonomi dan dampak negatif dalam suatu perdagangan. Perubahan nilai tukar yang drastis dapat menyebabkan ketidakstabilan pasar, meningkatkan biaya impor, dan mengurangi daya saing produk domestik.
+Volatilitas nilai tukar yang tinggi dapat menimbulkan ketidakpastian ekonomi dan berdampak negatif pada perdagangan internasional. Perubahan nilai tukar yang drastis dapat menyebabkan ketidakstabilan pasar, meningkatkan biaya impor, dan mengurangi daya saing produk domestik. Selain itu, volatilitas nilai tukar juga dapat mempengaruhi inflasi dan stabilitas ekonomi secara keseluruhan (Bank Indonesia, 2015).<br>
 
 **Penyelesaian**: <br>
-Untuk menyelesaikan masalah ini, diperlukan kebijakan yang tepat dari pemerintah dan bank sentral dari kedua negara, baik dari pihak Inggris maupun pihak Amerika Serikat untuk menjaga stabilitas nilai tukar. Kebijakan fiskal yang sehat dan kebijakan moneter yang tepat dapat membantu mengurangi volatilitas. Selain itu, kerjasama internasional dan komunikasi yang baik antara negara-negara juga penting untuk menjaga stabilitas pasar mata uang.
+Untuk mengatasi volatilitas nilai tukar, diperlukan sinergi antara kebijakan fiskal dan moneter. Kebijakan fiskal yang sehat, seperti pengelolaan anggaran yang bijaksana, serta kebijakan moneter yang tepat, seperti pengaturan suku bunga dan intervensi di pasar valuta asing, dapat membantu menjaga stabilitas nilai tukar (Bank Indonesia, 2015). Selain itu, kerjasama internasional dan komunikasi yang baik antara negara-negara juga penting untuk menjaga stabilitas pasar mata uang. <br>
 
 
 # Business Understanding
@@ -213,4 +212,7 @@ Berikut ini adalah kelebihan hasil dari proyek ini adalah:
 5. Tidak adanya diskusi tentang potensi overfitting atau underfitting, yang penting dalam evaluasi model machine learning.Kurangnya analisis tentang implikasi praktis dari hasil prediksi, seperti bagaimana model ini bisa digunakan dalam pengambilan keputusan investasi atau bisnis.
 
 **Referensi**: <br>
-Investing.com. (n.d.). Harga Mata Uang Pound Sterling terhadap US Dollar. Retrieved from https://id.investing.com/currencies/gbp-usd?form=MG0AV3
+
+Bank Indonesia. (2015). Konsep, Dinamika dan Respon Kebijakan Nilai Tukar di Indonesia. Retrieved from https://www.bi.go.id/id/edukasi/Documents/BSK-24-Nilai-Tukar-Ferry.pdf
+
+Sari, D. P., & Suryaningsih, I. B. (2017). The Impact of Political Event on Exchange Rate Volatility (Study at British Exit on Poundsterling (GBP) to US Dollar and US Dollar to Rupiah). Jurnal Administrasi Bisnis, 50(6), 1-8. Retrieved from https://administrasibisnis.studentjournal.ub.ac.id/index.php/jab/article/view/2306
